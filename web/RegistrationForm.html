@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
+    <div class="container">
+        <div class="navbar_top">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cleanup 2000</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <input placeholder="Імейл" class="form-control" type="text" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
+                </div>
+                <div class="form-group">
+                    <input placeholder="Пароль" class="form-control" type="password" maxlength="30" required>
+                </div>
+                <button type="submit" class="btn btn-success" style="margin-bottom: 8px;">Вход</button>
+                <a href="RegistrationForm.html" class="btn btn-primary" role="button" style="margin-bottom: 8px;">Регистрация</a>
+                <a href="AboutService.html" class="btn btn-info" role="button" style="margin-bottom: 8px;">О сервисе</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="panel panel-primary row">
+    <div class="panel-heading col-md-7 col-md-offset-2 panel_head">Registration</div>
+    <div class="panel-body col-md-offset-3 ">
+            <form class="form-horizontal ForForm" role="form">
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-2 control-label">Имя</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName" placeholder="Имя" pattern="^[A-z-]{2,15}|[А-Яа-яЁё-]{2,15}" maxlength="15" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSurName" class="col-sm-2 control-label">Фамилия</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputSurName" placeholder="Фамилия" pattern="^[A-z-]{2,25}|[А-Яа-яЁё-]{2,25}" maxlength="25" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="col-sm-2 control-label">E-mail</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Емейл" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone" class="col-sm-2 control-label">Телефон</label>
+                    <div class="input-group col-sm-10">
+                        <span class="input-group-addon">+380</span>
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="Телефон" pattern="^[0-9]{9}" maxlength="9" style="width: 95%;">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" maxlength="30" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputBorn" class="col-sm-2 control-label">Дата роджения</label>
+                    <div>
+
+                        <input type="date" id="inputBorn" required>
+                    </div>
+                </div>
+
+                <text class="radioType">Выбирете тип объявления которые желаете размещать:</text>
+                <div class="radio radioType">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadiosVender" value="optionVender" checked>
+                        <h5>Vender</h5>
+                    </label>
+                </div>
+                <div class="radio radioType">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadiosCustomer" value="optionCustomer">
+                        <h5>Customer</h5>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <button type="submit" class="btn btn-success col-md-offset-5 btn-lg">Регистрация</button>
+                </div>
+            </form>
+    </div>
+</div>
+
+
+
+<footer class="Footer">
+    <div>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-1 ">
+                Contact us:<br>
+                <h6>E-mail: lozovskii.ivan@gmail.com</h6>
+                <h6>E-mail: lozovskii_ivan@mail.ru</h6>
+                <h6>Phone: 0669467764</h6>
+
+            </div>
+            <div class="col-md-offset-2">
+                Follow us<br>
+                <a href="https://www.facebook.com/lozovskii.ivan"><img src="style/css/img/FacebookLogo.png" width="50" height="50"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+.btn
+{
+    margin: 10px;
+}
+
+.border
+{
+    margin: 10px;
+    border-size:1px;
+    border-style:solid;
+    border-color:lightgray;
+}
+
+.textCenter{
+    text-align: center;
+    margin-top: 5%;
+}
+.button_top
+{
+    margin-left: 80%;
+}
+.divBottom{
+    margin-bottom: 10%;
+    background: url(img/main-bg.jpg);
+}
+.divTop
+{
+    margin-top: 10%;
+}
+.divTopBottom
+{
+    margin-top: 15%;
+}
+.Footer
+{
+    margin-top: 5%;
+    background-color: dimgray;
+}
+.ForForm
+{
+    align-items: center;
+    width: 50%;
+}
+.divRegistration
+{
+    margin-bottom: 5%;
+    background: url(img/main-bg.jpg);
+}
+.radioType
+{
+    margin-left: 20%;
+}
+.ButtonIndex{
+    text-align: center;
+}
+.panel_head{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+body {
+    padding-top: 50px;
+}
+.header{
+    margin-bottom: 5%;
+}
+
+.boxPost{
+    margin-top: 15%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

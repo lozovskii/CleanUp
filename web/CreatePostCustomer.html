@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CreatePostCustomer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="style/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
+    <div class="container">
+        <div class="navbar_top">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Cleanup 2000</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="form">
+                <div class="form-group">
+                    <input placeholder="Імейл" class="form-control" type="text" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
+                </div>
+                <div class="form-group">
+                    <input placeholder="Пароль" class="form-control" type="password" maxlength="30" required>
+                </div>
+                <button type="submit" class="btn btn-success" style="margin-bottom: 8px;">Вход</button>
+                <a href="RegistrationForm.html" class="btn btn-primary" role="button" style="margin-bottom: 8px;">Регистрация</a>
+                <a href="AboutService.html" class="btn btn-info" role="button" style="margin-bottom: 8px;">О сервисе</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<div class="panel panel-info row">
+    <div class="panel-heading col-md-7 col-md-offset-2 panel_head">CreatePostCustomer</div>
+    <div class="panel-body col-md-offset-3 ">
+        <form class="form-horizontal ForForm" role="form">
+            <div class="form-group">
+                <label for="inputPlowad" class="col-sm-2 control-label">Квадратура помещения</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPlowad" placeholder="м.кв." pattern="^[0-9]{4}" maxlength="4" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputCountWorkers" class="col-sm-2 control-label">К-во желаемых работников</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputCountWorkers" placeholder="Количество работников" pattern="[0-9]{2}" maxlength="2" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputSanUzel" class="col-sm-2 control-label">К-во сан. узлов</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputSanUzel" placeholder="Количество сан узлов" pattern="[0-9]{2}" maxlength="2">
+                </div>
+            </div>
+            <!--<div class="form-group">
+                <label for="inputAdress" class="col-sm-2 control-label">Адресс</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputAdress" placeholder="Адресс">
+                </div>
+            </div>-->
+        </form>
+
+        <text class="radioType">Тип помещения:</text>
+        <div class="radio radioType">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadiosVender_TypeOffice" value="optionVender" checked>
+                <h5>Офис</h5>
+            </label>
+        </div>
+        <div class="radio radioType">
+            <label>
+                <input type="radio" name="optionsRadios" id="optionsRadiosCustomer_TypeFlat" value="optionCustomer">
+                <h5>Квартира/дом</h5>
+            </label>
+        </div>
+
+        <text class="radioType">Чьи моющие средства:</text>
+        <div class="radio radioType">
+            <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadiosVender_WachWorkers" value="optionVender" checked>
+                <h5>Работников</h5>
+            </label>
+        </div>
+        <div class="radio radioType">
+            <label>
+                <input type="radio" name="optionsRadios1" id="optionsRadiosCustomer_WachOwn" value="optionCustomer">
+                <h5>Вы предоставляете моющие средства(по минимальному списку)</h5>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+    <p><textarea class="textarea col-md-offset-4" rows="3" cols="65"  placeholder="Ваши пожелания" maxlength="200"></textarea></p>
+    </div>
+</div>
+
+<div class="row">
+    <button type="button" class="btn btn-success col-md-offset-5 btn-lg">Разместить объявление</button>
+</div>
+
+
+<footer class="Footer">
+    <div>
+        <div class="row">
+            <div class="col-md-8 ">
+                Contact us:<br>
+                <h6>E-mail: lozovskii.ivan@gmail.com</h6>
+                <h6>E-mail: lozovskii_ivan@mail.ru</h6>
+                <h6>Phone: 0669467764</h6>
+
+            </div>
+            <div class="col-md-offset-2">
+                Follow us<br>
+                <a href="https://www.facebook.com/lozovskii.ivan"><img src="style/css/img/FacebookLogo.png" width="50" height="50"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
