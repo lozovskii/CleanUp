@@ -42,38 +42,44 @@
 <div class="panel panel-primary row">
     <div class="panel-heading col-md-7 col-md-offset-2 panel_head">Registration</div>
     <div class="panel-body col-md-offset-3 ">
-            <form class="form-horizontal ForForm" role="form">
+            <form class="form-horizontal ForForm" role="form" action="registration" method="post">
+
                 <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">Имя</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputName" placeholder="Имя" pattern="^[A-z-]{2,15}|[А-Яа-яЁё-]{2,15}" maxlength="15" required>
+                        <input type="text" class="form-control" id="inputName" name="firstName" placeholder="Имя" pattern="^[A-z-]{2,15}|[А-Яа-яЁё-]{2,15}" maxlength="15" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputSurName" class="col-sm-2 control-label">Фамилия</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputSurName" placeholder="Фамилия" pattern="^[A-z-]{2,25}|[А-Яа-яЁё-]{2,25}" maxlength="25" required>
+                        <input type="text" class="form-control" id="inputSurName" name="lastName" placeholder="Фамилия" pattern="^[A-z-]{2,25}|[А-Яа-яЁё-]{2,25}" maxlength="25" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputEmail" class="col-sm-2 control-label">E-mail</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Емейл" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Емейл" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputPhone" class="col-sm-2 control-label">Телефон</label>
                     <div class="input-group col-sm-10">
                         <span class="input-group-addon">+380</span>
-                        <input type="tel" class="form-control" id="inputPhone" placeholder="Телефон" pattern="^[0-9]{9}" maxlength="9" style="width: 95%;">
+                        <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="Телефон" pattern="^[0-9]{9}" maxlength="9" style="width: 95%;">
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Пароль" maxlength="30" required>
+                        <input type="password" class="form-control" id="inputPassword" name="password" placeholder="Пароль" maxlength="30" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="inputBorn" class="col-sm-2 control-label">Дата роджения</label>
                     <div>
@@ -89,6 +95,7 @@
                         <h5>Vender</h5>
                     </label>
                 </div>
+
                 <div class="radio radioType">
                     <label>
                         <input type="radio" name="optionsRadios" id="optionsRadiosCustomer" value="optionCustomer">
