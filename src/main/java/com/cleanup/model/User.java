@@ -28,7 +28,7 @@ public class User {
         this.firstName = rs.getString("first_name");
         this.lastName = rs.getString("last_name");
         this.email = rs.getString("email");
-        this.phone = rs.getString("phone");
+        this.phone = rs.getString("phone_number");
         this.password = rs.getString("password");
     }
 

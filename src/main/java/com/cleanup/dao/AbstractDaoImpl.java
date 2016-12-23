@@ -91,7 +91,7 @@ public abstract class AbstractDaoImpl<T> implements AbstractDao<T, Long> {
 
     private PreparedStatement createPreparedStatement(Connection connection, T entity) throws SQLException {
         String query = this.getCreateQuery();
-        String[] generatedColumns = {"id"};
+        String[] generatedColumns = {"user_id"};
         PreparedStatement ps = connection.prepareStatement(query, generatedColumns);
         this.fillCreateStatement(ps, entity);
         ps.executeUpdate();

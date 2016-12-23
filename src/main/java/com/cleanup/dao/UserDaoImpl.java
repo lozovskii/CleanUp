@@ -1,6 +1,7 @@
 package com.cleanup.dao;
 
 import com.cleanup.model.User;
+import com.cleanup.util.exceptions.EntityStorageException;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -17,7 +18,7 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
             ps.setString(4, entity.getPhone());
             ps.setString(5, entity.getPassword());
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new EntityStorageException("Failed to save entity: " + entity, e);
         }
     }
 
@@ -31,7 +32,7 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
             ps.setString(5, entity.getPassword());
             ps.setLong(6, entity.getId());
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new EntityStorageException("Failed to save entity: " + entity, e);
         }
     }
 
@@ -40,9 +41,8 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
         try {
             return new User(rs);
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new EntityStorageException("Failed to save employee entity", e);
         }
-        return null;
     }
 
     @Override

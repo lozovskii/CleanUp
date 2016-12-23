@@ -16,6 +16,8 @@
         <angular.version>1.6.0</angular.version>
         <oracle.version>10.2.0.3.0</oracle.version>
         <javax.servlet.version>4.0.0-b01</javax.servlet.version>
+        <oracle.version>6.0</oracle.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
@@ -32,13 +34,18 @@
         <dependency>
             <groupId>oracle</groupId>
             <artifactId>com.oracle</artifactId>
-            <version>6.0</version>
+            <version>${oracle.version}</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
         </dependency>
     </dependencies>
 
