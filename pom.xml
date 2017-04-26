@@ -14,7 +14,7 @@
     <properties>
         <bootstrap.version>3.3.5</bootstrap.version>
         <angular.version>1.6.0</angular.version>
-        <oracle.version>10.2.0.3.0</oracle.version>
+        <oracle.version>6.0</oracle.version>
         <javax.servlet.version>4.0.0-b01</javax.servlet.version>
         <oracle.version>6.0</oracle.version>
         <junit.version>4.12</junit.version>

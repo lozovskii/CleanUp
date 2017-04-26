@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="style/css/main.css">
     <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
-<body>
+<body style="height: 100%">
 
 <nav class="navbar navbar-default navbar-fixed-top header" role="navigation">
     <div class="container">
@@ -19,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Cleanup 2000</a>
+            <a class="navbar-brand" href="index.jsp">Restaurant</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" role="form">
@@ -61,7 +61,7 @@
                 <div class="form-group">
                     <label for="inputEmail" class="col-sm-2 control-label">E-mail</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Емейл" pattern="^[A-Za-z_-]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
+                        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Емейл" pattern="^[A-Za-z_-0-9]{4,20}@[A-Za-z]{1,8}\.[A-Za-z]{1,5}" maxlength="32" required>
                     </div>
                 </div>
 
@@ -88,21 +88,6 @@
                     </div>
                 </div>
 
-                <text class="radioType">Выбирете тип объявления которые желаете размещать:</text>
-                <div class="radio radioType">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadiosVender" value="optionVender" checked>
-                        <h5>Vender</h5>
-                    </label>
-                </div>
-
-                <div class="radio radioType">
-                    <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadiosCustomer" value="optionCustomer">
-                        <h5>Customer</h5>
-                    </label>
-                </div>
-
                 <div class="row">
                     <button type="submit" class="btn btn-success col-md-offset-5 btn-lg">Регистрация</button>
                 </div>
@@ -112,7 +97,7 @@
 
 
 
-<footer class="Footer">
+<footer class="Footer navbar-fixed-bottom">
     <div>
         <div class="row">
             <div class="col-md-8 col-md-offset-1 ">
