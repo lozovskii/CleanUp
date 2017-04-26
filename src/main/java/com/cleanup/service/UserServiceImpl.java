@@ -30,4 +30,5 @@ public class UserServiceImpl implements UserService {
     public User findOne(Long id) {
         return this.userDao.findOne(id);
     }
+
 }

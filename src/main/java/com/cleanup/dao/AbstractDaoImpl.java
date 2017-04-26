@@ -91,7 +91,7 @@ public abstract class AbstractDaoImpl<T> implements AbstractDao<T, Long> {
 
     private PreparedStatement createPreparedStatement(Connection connection, T entity) throws SQLException {
         String query = this.getCreateQuery();
-        String[] generatedColumns = {"user_id"};
+        String[] generatedColumns = this.getGeneratedColumn();
         PreparedStatement ps = connection.prepareStatement(query, generatedColumns);
         this.fillCreateStatement(ps, entity);
         ps.executeUpdate();
@@ -99,11 +99,14 @@ public abstract class AbstractDaoImpl<T> implements AbstractDao<T, Long> {
         return ps;
     }
 
+
     protected abstract void fillCreateStatement(PreparedStatement ps, T entity);
 
     protected abstract void fillUpdateStatement(PreparedStatement ps, T entity);
 
     protected abstract T getEntity(ResultSet rs);
+
+    protected abstract String[] getGeneratedColumn();
 
     protected abstract String getCreateQuery();
 
@@ -112,4 +115,5 @@ public abstract class AbstractDaoImpl<T> implements AbstractDao<T, Long> {
     protected abstract String getUpdateQuery();
 
     protected abstract String getDeleteQuery();
+
 }

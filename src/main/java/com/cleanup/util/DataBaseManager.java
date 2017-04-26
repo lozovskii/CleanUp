@@ -24,7 +24,7 @@ public class DataBaseManager {
 
     private static DataBaseManager instance;
 
-    public static DataBaseManager getInstance() {
+    public static DataBaseManager getInstance() {   //экземпляр объекта, проверяем есть ли
         if (instance == null) {
             instance = new DataBaseManager();
         }

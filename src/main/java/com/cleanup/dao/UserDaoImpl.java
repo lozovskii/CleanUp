@@ -46,6 +46,11 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
     }
 
     @Override
+    protected String[] getGeneratedColumn(){
+        return new String[] {"user_id"};
+    }
+
+    @Override
     protected String getCreateQuery() {
         return this.dataBaseManager.getQuery("create.user");
     }
@@ -64,4 +69,5 @@ public class UserDaoImpl extends AbstractDaoImpl<User> implements UserDao {
     protected String getDeleteQuery() {
         return this.dataBaseManager.getQuery("delete.user");
     }
+
 }
